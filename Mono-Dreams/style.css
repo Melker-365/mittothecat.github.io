@@ -1,0 +1,126 @@
+body{
+    /*background-color: rgb(34, 113, 137);*/
+    background-image: linear-gradient(90deg, rgb(21, 122, 169), rgb(97, 56, 201));
+
+}
+h2{
+    color:azure;
+    text-align: center;
+    font-size: 100px;
+    font-family: Arial;
+}
+p{
+    color:azure;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+a {
+    color: rgb(0, 179, 255);
+}
+
+h1{
+        color:azure;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    .blogg{
+        border: outset 5px;
+        border-radius: 80px;
+        border-color: rgb(55, 56, 121);
+        background-image: linear-gradient(90deg,rgb(53, 83, 251), rgb(157, 0, 255));
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .bloggs {
+        border: outset 5px;
+        background-color: aliceblue;
+        border-color: rgb(215, 225, 233);
+        width: 100%;
+        margin-top: -55px;
+        
+    }
+    .bloggText{
+        text-align: center;
+        margin-left: 30px;
+    }
+    .bloggbutton{
+        background-color: rgb(70, 119, 187);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-right: 30px;
+        margin-bottom:55px;
+    }
+
+button{
+    background-color:rgb(173, 213, 240);
+    margin: 3px 1px;
+    cursor: pointer;
+    font-size: large;
+    color:black;
+    transition: background-color 0.5s;
+
+}
+button:hover{
+    background-color: #8ea5b5;
+}
+@keyframes fadeIn {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+} 
+
+.middle {
+    text-align: center;
+}
+
+.fade--delay {
+
+    animation-delay: 5s;
+
+}
+
+.fade--short {
+
+    animation-duration: 1s;
+
+}
+
+.fade--long {
+    animation-duration: 3s;
+}
+
+.fadeIn {
+
+    animation: fadeIn 1.5s ease-in-out 0s;
+
+}
+
+@keyframes slideInLeft {
+
+    0% {
+        transform: translateX(-700px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.slideInLeft {
+
+    animation: slideInLeft 2s ease-in-out 0s;
+
+}
+
