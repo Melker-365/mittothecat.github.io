@@ -1,175 +1,126 @@
-html, body {
-
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    overflow-x: hidden;
-
-    background-color: rgb(84, 165, 195);
-    background-color: rgb(33, 33, 34);
-    background-image: linear-gradient(rgb(33, 33, 33),rgb(22, 22, 22));
-    font-family: 'Bowlby One';
-    
+body{
+    /*background-color: rgb(34, 113, 137);*/
+    background-image: linear-gradient(90deg, rgb(21, 122, 169), rgb(97, 56, 201));
 
 }
-
-.header {
-
-    background-color: rgb(10,10,10);
-    width: 100vw;
-    height: clamp(30px, 15vw, 60px);
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    
-
+h2{
+    color:azure;
+    text-align: center;
+    font-size: 70px;
+    font-family: Arial;
 }
-.inner-header{
-
-    height: 100%;
-    width: 80%;
-    max-width: 2500px;
-    margin: 0 auto;
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(10,10,10);
-
+p{
+    color:azure;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial;
 }
-.inner-header-img img{
-   
-    
-    width: auto;
-    padding: 0;
-    height: 25px;
-    width: auto;
-    max-height: 60%;
-    margin: 0px;
 
+a {
+    color: rgb(0, 179, 255);
 }
-.inner-header-img {
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:left;
-    margin: 0px;
-    padding: 0;
-    border: none;
-
-}
-.inner-header-img p{
-
-
-
-    margin: 2vw;
-    padding: 0;
-    border: none;
-    font-size: 2vw;
- 
-
-}
-@media screen and (max-width: 700px) {
-    
-    .inner-header-img p {
-        display:none;
+h1{
+        color:azure;
+        font-family: Arial, Helvetica, sans-serif;
+        
     }
 
+    .blogg{
+        border: outset 5px;
+        border-radius: 40px;
+        border-color: rgb(55, 56, 121);
+        background-image: linear-gradient(90deg,rgb(53, 83, 251), rgb(157, 0, 255));
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .bloggs {
+        border: outset 5px;
+        background-color: aliceblue;
+        border-color: rgb(215, 225, 233);
+        width: 100%;
+        margin-top: -55px;
+        border-radius: 10px;
+        
+    }
+    .bloggText{
+        text-align: center;
+        margin-left: 30px;
+    }
+    .bloggbutton{
+        background-color: rgb(70, 119, 187);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-right: 30px;
+        margin-bottom:55px;
+    }
+
+button{
+    background-color:rgb(173, 213, 240);
+    margin: 3px 1px;
+    cursor: pointer;
+    font-size: large;
+    color:black;
+    transition: background-color 0.5s;
+
 }
-.inner-header a{
-
-    font-size: clamp(0.2em, 3vw, 1.5em);
-    padding: 0 1vw;
-    margin: 0 auto;
-    background-color: rgb(92, 66, 66);
-    color: white;
-    border-radius: 5px;
-    background-image: linear-gradient(180deg, black, black, rgb(255, 174, 0), rgb(255, 72, 0));
-    background-size: 100% 300%;
-    background-position: top;
-    transition: background-position 0.2s ease-in-out, padding 0.2s ease-in-out;
-
-
+button:hover{
+    background-color: #8ea5b5;
 }
-
-.inner-header a:hover{
-
-    background-color: rgb(161, 35, 0); 
-    padding: 0vw 3vw;
-    background-position: bottom;
-    
- 
-    
-}
-
-@keyframes hover-btn {
+@keyframes fadeIn {
 
     0% {
-        padding: 50% auto;
-    }
-    10% {
-        padding: 50% 0;
+        opacity: 0;
     }
     100% {
-        background-position: bottom;
-        padding: 0 1vw;
+        opacity: 1;
+    }
+
+} 
+
+.middle {
+    text-align: center;
+}
+
+.fade--delay {
+
+    animation-delay: 5s;
+
+}
+
+.fade--short {
+
+    animation-duration: 1s;
+
+}
+
+.fade--long {
+    animation-duration: 3s;
+}
+
+.fadeIn {
+
+    animation: fadeIn 1.5s ease-in-out 0s;
+
+}
+
+@keyframes slideInLeft {
+
+    0% {
+        transform: translateX(-700px);
+    }
+    100% {
+        transform: translateX(0);
     }
 
 }
 
-h2 {
+.slideInLeft {
 
-    color: rgb(255, 255, 255);
-    font-size: 7vw;
-    text-align: center;
-    
+    animation: slideInLeft 2s ease-in-out 0s;
 
-}
-p {
-
-    color: white;
-    margin: 10vw;
-    font-size: clamp(0.7em,3vw, 2em);
-    text-align: center;
-
-}
-hr {
-    height: clamp(2px, 2.5vw, 20px);
-    background-color: rgb(217, 10, 10);
-    border: none;
-    width: clamp(100px, 70vw, 900px);
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-img {
-
-
-    width: clamp(100px, 70vw, 900px);
-    margin-top: 10vw;
-    padding: 0 0;
-    margin: 0 auto;
-    display: block;
-    
-}
-.bowlby-one-regular {
-    font-family: "Bowlby One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.header-main{
-
-    max-width: 700px;
-    background-color: red;
-
-}
-.image {
-    margin-top: clamp(50px, 25vw, 150px);
 }
